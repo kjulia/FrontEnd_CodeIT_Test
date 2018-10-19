@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-image: url("../img/bg.png"); }
 .container {
-  width: 450px; 
-  height: 600px;
+  width: 469px; 
+  height: 635px;
   background-color: #fffafa;
   margin: 75px auto 0 auto; 
   text-align: center;
@@ -19,20 +22,29 @@ body {
 input[type="text"],
 input[type="password"],
 select {
-  width: 380px;
+  width: 445px;
   height: 40px;
   font-size: 17px;
   margin-bottom: 20px;
   border-radius: 4px;
-  padding-left: 10px; }
+  padding-left: 10px; 
+  border: 1px solid #ffc0cb;}
 .dws-submit {
   padding: 13px 30px;
   margin: 5px 0 20px 0;
   font-size: 15px;
+  color: #E0FFFF;
   background-color: #87ceeb;
   border: none;
   border-bottom: 4px solid #7fffd4;
+  border-radius: 5px;
   cursor: pointer; }
+form label.error{
+    font-size: 15px;
+    color:#f00;
+    margin:0 auto }
+
+
 
 
 

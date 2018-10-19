@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 </head>
 <body>
     <div class="container">
       <img src="img/icon.png">
-      <form>
+      <form id="signUp" method="post">
         <div class="dws-input">     
-        <input name="name" type="text" placeholder="Имя">
-        <input name="secondname" type="text" placeholder="Фамилия">
+        <input name="name" type="text" placeholder="Name">
+        <input name="secondname" type="text" placeholder="Surname">
         <input name="email" type="text" placeholder="Email">
-        <select>
-            <option selected disabled>Выберите пол</option>
-            <option>Мужской</option>
-            <option>Женский</option>
+        <select name="gender" id="gender">
+            <option selected disabled value="gender">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
         </select>
-        <input name="password" type="password" placeholder="Введите пароль">
-        <input class="dws-submit" type="submit" value="Отправить">
+        <input name="password" type="password" placeholder="Enter the password">
+        <input class="dws-submit" type="submit" value="Send">
         <br/>
         <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">С условиями ознакомлен(а)</label>
+        <label for="checkbox">Conditions of Agreements</label>
         </div>
       </form>
  </div>
@@ -34,12 +32,8 @@
 
 
 
-
-
-
-
-
-  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
