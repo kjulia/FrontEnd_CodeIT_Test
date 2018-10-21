@@ -36,7 +36,7 @@ $(function() {
 		}
 	});
 
-	$('#signUp').on('submit', function (e) {
+	$('form').on('submit', function (e) {
 		e.preventDefault();
 		if (!$('#signUp').valid()) {
 			return false;
@@ -48,7 +48,7 @@ $(function() {
 			data: formData,
 		})
 		.done(function(response) {
-			alert( response );
+			alert(response);
 		})
 		.fail(function(error) {
 			console.log(error);
@@ -68,3 +68,11 @@ $(function() {
 	}
 
 });
+
+$('#signUp').submit(function(e) {
+    this.submit();
+    setTimeout(function() {
+        window.location.href = './pages/companies.html';
+    }, 100);
+});
+

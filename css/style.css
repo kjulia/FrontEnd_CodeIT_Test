@@ -40,9 +40,9 @@ select {
   border-radius: 5px;
   cursor: pointer; }
 form label.error{
-    font-size: 15px;
-    color:#f00;
-    margin:0 auto }
+  font-size: 15px;
+  color:#f00;
+  margin:0 auto }
 
 
 
