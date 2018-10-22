@@ -36,7 +36,7 @@ $(function() {
 		}
 	});
 
-	$('form').on('submit', function (e) {
+	$('#signUp').on('submit', function (e) {
 		e.preventDefault();
 		if (!$('#signUp').valid()) {
 			return false;
@@ -69,10 +69,17 @@ $(function() {
 
 });
 
-$('#signUp').submit(function(e) {
+$('#signUp').submit(function(e) {         //redirect
     this.submit();
     setTimeout(function() {
         window.location.href = './pages/companies.html';
     }, 100);
+});
+
+$ajax('http://codeit.pro/codeitCandidates/serverFrontendTest/company/getList')
+.done(function(data){
+	$each(data.list,function(key,item){
+		$('#companyTable').append('<tr><td>${item.name}</td></tr>');
+	})
 });
 
