@@ -76,10 +76,4 @@ $('#signUp').submit(function(e) {         //redirect
     }, 100);
 });
 
-$ajax('http://codeit.pro/codeitCandidates/serverFrontendTest/company/getList')
-.done(function(data){
-	$each(data.list,function(key,item){
-		$('#companyTable').append('<tr><td>${item.name}</td></tr>');
-	})
-});
 
