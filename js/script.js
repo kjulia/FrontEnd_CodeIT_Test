@@ -1,7 +1,8 @@
 $(function() {
 
-	$('#signUp').validate({
+	var signup = $('#signUp');
 
+	signup.validate({
 		rules: {
 			name: {
 				required: true,
@@ -36,9 +37,9 @@ $(function() {
 		}
 	});
 
-	$('#signUp').on('submit', function (e) {
+	signup.on('submit', function (e) {
 		e.preventDefault();
-		if (!$('#signUp').valid()) {
+		if (!signup.valid()) {
 			return false;
 		}
 		var formData = getFormData();
@@ -48,11 +49,21 @@ $(function() {
 			data: formData,
 		})
 		.done(function(response) {
-			alert(response);
+			if (response.status === "OK") {
+				setTimeout(function() {
+					window.location.href = './pages/companies.html';
+				}, 100);
+			} else if (response.status === "Form Error") {
+				var validator = signup.validate();
+				var error_object = {};
+				error_object[response.field] = response.message;
+				validator.showErrors(error_object);
+			} else {
+				alert(response.message);
+			}
 		})
 		.fail(function(error) {
 			console.log(error);
-			alert( error.message );
 		})
 	});
 
@@ -68,12 +79,3 @@ $(function() {
 	}
 
 });
-
-$('#signUp').submit(function(e) {         //redirect
-    this.submit();
-    setTimeout(function() {
-        window.location.href = './pages/companies.html';
-    }, 100);
-});
-
-

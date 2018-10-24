@@ -8,32 +8,28 @@
 </head>
 <body>
     <div class="container">
-      <img src="img/icon.png">
-      <form id="signUp" action="http://codeit.pro/codeitCandidates/serverFrontendTest/user/registration" method="post">
-        <div class="dwsInput">     
-        <input name="name" type="text" placeholder="Name">
-        <input name="secondname" type="text" placeholder="Surname">
-        <input name="email" type="text" placeholder="Email">
-        <select name="gender" id="gender">
-            <option selected disabled value="gender">Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-        </select>
-        <input name="password" type="password" placeholder="Enter the password">
-        <input class="dwsSubmit" type="submit" value="Send">
-        <br/>
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">Conditions of Agreements</label>
+      <img src="img/icon.png" alt="icon">
+      <form id="signUp">
+        <div>     
+            <input name="name" type="text" placeholder="Name">
+            <input name="secondname" type="text" placeholder="Surname">
+            <input name="email" type="text" placeholder="Email">
+            <select name="gender" id="gender">
+                <option selected disabled value="gender">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <input name="pass" type="password" placeholder="Enter the password">
+            <input class="dwsSubmit" type="submit" value="Send">
+            <br/>
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">Conditions of Agreements</label>
         </div>
-      </form>
-    </div>
+    </form>
+</div>
 
-
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
-  <script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

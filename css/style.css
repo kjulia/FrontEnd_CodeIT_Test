@@ -28,7 +28,7 @@ select {
   margin-bottom: 20px;
   border-radius: 4px;
   padding-left: 10px; 
-  border: 1px solid #ffc0cb;}
+  border: 1px solid #ffc0cb; }
 .dwsSubmit {
   padding: 13px 30px;
   margin: 5px 0 20px 0;
@@ -39,10 +39,56 @@ select {
   border-bottom: 4px solid #7fffd4;
   border-radius: 5px;
   cursor: pointer; }
-form label.error{
+label {
+  font-family: sans-serif; }
+form label.error {
+  font-family: sans-serif;
   font-size: 15px;
   color:#f00;
   margin:0 auto }
+.totalCompany {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 500px;
+  height: 250px;
+  background-color: #FFB6C1;
+  opacity: .7;
+  border-radius: 8px; }
+#companyList {
+  margin: -255px 800px;
+  width: 500px;
+  height: 250px;
+  background-color: #ffb6c1;
+  opacity: .7;  
+  overflow:hidden; 
+  overflow-y:scroll;
+  font-family: sans-serif;
+  font-size: 20px;
+  border-radius: 8px; }
+dt {
+  border-bottom: 2px solid #fff5ee; 
+  color: #800080; }
+.header {
+  color: #191970;
+  width: 500px;
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  background-color: #db7093; }
+.sum {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin: 10px auto;
+  background-color:  #ecf5e4; 
+  border: 10px solid #00CED1; 
+  text-align: center; }
+span {
+  color: #800080;
+  font-size: 48px;
+  line-height: 170px; } 
+
+
 
 
 
